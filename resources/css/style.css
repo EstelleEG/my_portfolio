@@ -1,0 +1,870 @@
+/* GENERAL*/
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Work Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+a {
+  text-decoration: none;
+}
+  
+/************************************ HEADER NAV *******************************************************/
+
+/* logo is child of nav */
+.logonav{        
+  width:6rem;
+  margin-left: 10rem;
+}
+    
+/* is parent of logo and tabs a*/
+nav{         
+  width:100%;
+  background-color:#1e1e1e;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+  padding-top: 3.5rem;
+}
+   
+  /*a are children of tabs*/
+  .tabs{      /* is child of nav and parent of the a*/
+    display: flex;
+    width:50%;
+   justify-content: space-around;
+  }
+  
+  .tabs>a{      
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:whitesmoke;
+    display:block;
+  }
+  
+  .tabs>a:hover{  
+    color:#53b89a;
+  }
+  
+  .active {
+    background-color: #1e1e1e;
+  }
+
+  /***for iconsSM******/
+  .iconsSM>a>i{      
+    font-size: 1.5rem;
+    color:#53b89a;
+    margin-left: 0.6rem;
+  }
+  
+  .iconsSM>a>i:hover{      
+    color:whitesmoke;
+  }
+     
+/****************************************** MAIN SECTION ******************************************/
+section{
+    display:flex;
+    align-items: center;
+    width:100%;
+    background-color:#1e1e1e;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  
+.idmeimg img{
+    border-radius: 1%;
+  width:20rem;
+  }
+  
+  .textintro{
+    color:whitesmoke;
+    
+  }
+  
+  .textintro h3{
+    font-size: 5rem;
+    font-family: 'Tangerine', cursive;
+  }
+  
+ .textintro h1{
+    font-size: 6rem;
+    font-family: 'Tangerine', cursive;
+  }
+  
+  .textintro p{
+    font-size: 1.5rem;
+    
+  }
+  
+  .textintro h3, h1, p{
+    padding:0.6rem;
+  }
+  
+/******************************* Btn download CV ****************************************************/
+.btncv a{  /*link of btn*/
+    text-decoration: none;
+    color:whitesmoke;
+  }
+  
+  .btncv{
+    width:14rem;
+    height: 70px;
+    color: #1e1e1e;
+    background-color: #1e1e1e;
+    border: 0.15rem solid #65b8ab;
+    border-radius: 1rem;
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 1%;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding:1px;
+    cursor: pointer;
+  }
+  
+  .btncv:hover {
+    background-color: #53b89a;
+    color:#1e1e1e;
+    box-shadow: 2px 2px 2px 0px #53a89b;
+  }
+  
+  .btncv:hover * {
+    color:#1e1e1e;
+  }
+
+  /************ Icon download CV **********************/
+  .btncv i{
+  color:whitesmoke;
+  margin-right: 0.5rem;
+  }
+  
+
+  /********************************** Btn Portfolio ***************************************************/
+.btnportfolio{
+  color:whitesmoke;
+  margin-top: 1.2rem;
+  margin-left: 0.5rem;
+  margin-right: 1%;
+  width:14rem;
+  height: 70px;
+  background-color: #1e1e1e;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: 0.15rem solid #65b8ab;
+  transition: all 0.5s;
+}
+  
+.btnportfolio:hover {
+  background-color: #53b89a;
+}
+
+.btnportfolio span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+  .btnportfolio span:after {
+    content: '\00bb';
+    position: absolute;
+    color:#1e1e1e;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btnportfolio:hover span {
+    padding-right: 25px;
+    color: #1e1e1e;
+  }
+  
+  .btnportfolio:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+/********************************* Infocontact ***************************************************/
+.infocontact{
+  color: whitesmoke;
+  background-color: #1e1e1e ;
+  text-align: center;
+  font-size: 1.7rem; 
+}
+
+.contactezmoi{
+  font-size: 5rem;
+  font-family: 'Tangerine', cursive;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+}
+  
+/****************************************** Cards MES SERVICES ***************************/
+
+.messervices h1{ 
+    display:flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    color:whitesmoke;
+    font-size: 5rem;
+    font-family: 'Tangerine', cursive;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.containercard {
+    position: relative;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {   /*card flip*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #53b89a;
+}
+
+.overlay .text{  
+  font-size: 1.6rem;
+}
+  
+.containercard:hover .overlay {
+    opacity: 0.9;
+}
+  
+.text {
+    color: #1e1e1e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.allcards{
+    display:flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding-bottom: 7rem;
+}
+
+/************************************Slider imgs ***************************/
+
+
+/********************************** CONTACT FORM ******************/
+
+.contact-container{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width:100%;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-color: #1e1e1e;
+  color: whitesmoke;
+}
+
+.wholeform form{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+}
+
+#contact-form input,textarea{
+  background-color: transparent;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #53b89a;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+#contact-form label{
+  font-size: 2rem;
+}
+
+#contact-form input,textarea{
+ color:whitesmoke;
+}
+
+
+#contact-form input:focus {
+  transition: text-indent 0.4s 0.4s ease; 
+  text-indent: -100%;
+  opacity: 1;
+}
+
+#contact-form button{
+  background-color: #1e1e1e;
+  color: whitesmoke;
+  margin-top: 2rem;
+  padding:1.5rem;
+  width:14rem;
+  height: 70px;
+  font-size: 1.7rem;
+  border-radius: 1rem;
+  padding:1px;
+  border: 0.15rem solid #65b8ab;
+}
+
+#contact-form button:hover {
+  color:#1e1e1e;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 0px #53a89b;
+  background-color: #53b89a;
+}
+
+.h2cf h2{
+  font-size:5rem;
+  font-family: 'Tangerine', cursive;
+  position: relative;
+  left:4rem;
+}
+
+.h2cf p{
+  font-size:1.5rem;
+  position: relative;
+  left:4rem;
+}
+
+
+/************************ Scroll Top arrow ******************************/
+  #myBtn {
+    position: fixed;
+    bottom: 10.2rem;
+    right: 1rem;
+    z-index: 99;
+    font-size: 0.8rem;
+    background-color: #53b89a;
+    color: #1e1e1e;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 4px;
+    width:3rem;
+    height: 3rem;
+    border:none;
+  }
+  
+  #myBtn i {
+  color:whitesmokesmoke;
+  font-size: 1.5rem;;
+  }
+  
+  #myBtn:hover {
+    background-color: #53a89b;
+  }
+  
+/************************* FOOTER ************************************/
+
+footer {
+    display:flex;      /* align items horizontally */
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+    
+  .logofooter {
+    width:5rem;
+    margin: 2rem 0px 3rem 3rem;
+  }
+    
+  footer p{
+    font-size: 1.2rem;
+  }
+    
+  .iconsSMfooter{     
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 1rem;
+  }
+ 
+  .iconsSMfooter i{
+    color: #53a89b;
+    padding: 8px;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .iconsSMfooter i:hover{
+    color:#1e1e1e;
+  }
+
+  /**********************************PORTFOLIO PAGE***********************************/
+  /*************************** PORTFOLIO WITH FILTERING *********************/
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+.container{
+  max-width: 1140px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.section-title h1{
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:whitesmoke;
+  margin: 0 0 5px;
+  position: relative;
+}
+.section-title h1:before{
+  content: '';
+  left: 0;
+  position: absolute;
+  height: 2px;
+  right: 32%;
+  background-color: grey;
+  bottom: 0px;
+}
+.text-center{
+  text-align: center!important;
+}
+.text-right{
+  text-align: right!important;
+}
+.portfolio{
+  background-color: #1e1e1e;
+  padding: 9rem;
+  padding-bottom: 20rem;
+
+}
+.portfolio .section-title h1:before{
+  left: 30%;
+}
+.portfolio .filter-buttons{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.portfolio .filter-buttons ul{
+  list-style: none;
+  text-align: center;
+  padding: 3rem;
+}
+.filter-buttons ul li{
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0px 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+}
+.portfolio .filter-buttons ul li.active{
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+}
+.portfolio .portfolio-gallery{
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio .portfolio-gallery .item{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  position: relative;
+  padding: 8px;
+
+}
+.portfolio .portfolio-gallery .item .inner{
+  position: relative;
+}
+.portfolio .portfolio-gallery .item img{
+  width: 100%;
+  display: block;
+}
+
+@media(max-width:767px){
+
+  .portfolio .portfolio-gallery .item{
+      flex:0 0 50% ;
+      max-width: 50%;
+      position: relative;
+      padding:8px ;
+  }
+  .idmeimg {
+    text-align: center;
+  }
+
+}
+@media(max-width:500px){
+  .portfolio .portfolio-gallery .item{
+      flex:0 0 100% ;
+      max-width: 100%; }
+}
+
+
+
+/*********************************** BURGER MENU ICON ***************************/
+.nav-toggle{
+    display:none;
+    color: #53a89b;
+}
+
+.nav-toggle i{
+  color: #53a89b;
+}
+ 
+/************************************ MEDIA QUERIES *********************************/
+/************************************ MEDIA QUERIES *********************************/
+/************************************ MEDIA QUERIES *********************************/
+@media (max-width: 575px) {
+/************* header nav ***************/
+/* logo is child of nav */
+.logonav {        
+  width:4rem;
+  margin-left: 5rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+/************* MAIN SECTION *************/
+section{
+  flex-wrap: wrap;
+  padding-top: 4rem;
+  padding-left: 2rem;
+}
+
+.idmeimg {
+  text-align: center;
+}
+
+.idmeimg img{
+  border-radius: 1%;
+  width:16rem;
+}
+
+
+.textintro h3{
+  font-size: 3rem;
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+}
+
+.textintro h1{
+  font-size: 4rem;
+  text-align: center;
+}
+
+.textintro p{
+  font-size: 1rem;
+}
+
+.textintro h3, h1, p{
+  padding:0.6rem;
+}
+
+/************* Btn download CV *************/
+.btncv a{  /*link of btn*/
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+.btncv{
+  width:12rem;
+  height: 3rem;
+  border-radius: 1rem;
+  margin-top: 1.2rem;
+  margin-left: 0.5rem;
+  margin-right: 1%;
+  font-size: 0.8rem;
+  padding:1px;
+}
+
+ /******************** Btn Portfolio *************/
+ .btnportfolio{
+  width:12rem;
+  height: 3rem;
+  font-size: 0.8rem;
+}
+
+/******************* Infocontact ************/
+.infocontact{
+  font-size: 1rem; 
+}
+
+.contactezmoi{
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+/****************** Cards MES SERVICES **************************/
+.messervices h1{ 
+    font-size: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.containercard {
+    position: relative;
+    margin-bottom: 2rem;
+}
+  
+.overlay .text{  
+  font-size: 1rem;
+}
+  
+ 
+.text {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.allcards{
+    justify-content: center;
+    background-color: #1e1e1e;
+}
+    
+/************************** CONTACT FORM ******************/
+.contact-container{
+  width:100%;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+  
+}
+
+.wholeform form{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+}
+
+#contact-form input,textarea{
+  background-color: transparent;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #53b89a;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+#contact-form label{
+  font-size: 1.5rem;
+}
+
+#contact-form button{
+  margin-top: 2rem;
+  padding:1.5rem;
+  width:12rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  padding:1px;
+}
+
+.h2cf h2{
+font-size:3.5rem;
+padding-left: 0rem;
+left:0rem;
+}
+
+.h2cf p{
+  font-size:1rem;
+  position: relative;
+  padding-bottom: 6rem;
+  left:0rem;
+}
+
+
+/************** Scroll Top arrow **************/
+  #myBtn i {
+  font-size: 1rem;
+  }
+  
+/************************* FOOTER ************************************/
+.logofooter {
+  width:5rem;
+  margin: 2rem 0px 3rem 3rem;
+}
+  
+footer p{
+  font-size: 0.5rem;
+  padding-left:2rem;
+}
+  
+.iconsSMfooter{     
+  margin-left: 1rem;
+}
+
+.iconsSMfooter i{
+  padding: 4px;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+
+/************************************ END MEDIA QUERIES @media (max-width: 575px) { *********************************/
+}
+
+
+
+
+
+
+
+
+
+/*for screens of 768 px and less*/
+@media (max-width: 768px) {
+  .title-top-md {
+    order: -1;
+  }
+    .iconsSM {
+    display:none;
+  }
+
+
+  section h1{
+    font-size: 40px;
+  }
+  
+  section p{
+    font-size: 18px;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  button{
+    width:130px;
+  }
+  
+  .msg{  /*input Message in contact form*/
+    width:220px;
+  }
+  
+  .btnsend{ /*Btn Contatez-moi*/
+    width:7.2rem;
+    margin-left: -0.1rem;
+    font-size: 1.2rem;
+  }
+    
+  footer p{
+    font-size: 13px;
+  }
+  
+  #myBtn{  /*Scroll up arrow Btn*/
+    display: none;
+  }
+  
+  .iconsSMfooter i{
+    font-size: 1.2rem;
+  }
+
+/************************ BURGER MENU DROPDOWN *********************************/
+  .nav-toggle{
+    display:block;
+    color: whitesmoke;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border-style: none;
+    cursor: pointer;
+  }
+    
+  .tabs{
+    display:none;/*I hide the tabs a, i see them only when i ll click on the burger icon*/
+    width:100%;
+    text-align: center;
+  }
+    
+  .tabs a{
+    background-color: #53a89b;
+    width:100%;
+    font-size: 1.3rem;
+    color:#1e1e1e;
+    padding: 1.3rem;
+  }
+  
+  .tabs a i{
+    display:none;
+  }
+    
+  .tabs a:hover{
+    color:whitesmoke;
+  }
+    
+  nav{
+    display:flex;
+    height:auto;/* covers blanks in between tabs*/
+    padding-top: 25px;
+    justify-content: space-between;
+  }
+    
+  .showtabs{  /* will tell JS to use it when I ll need to display the tabs a after clicking on the burger menu icon, no need to add this class in html*/
+    display:block;
+  }
+    
+  .logo {
+    margin-left: 5rem;
+    width:7rem;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+}
