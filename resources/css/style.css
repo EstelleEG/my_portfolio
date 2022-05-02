@@ -80,8 +80,9 @@ section{
 
   
 .idmeimg img{
-    border-radius: 1%;
-  width:20rem;
+  border-radius: 1%;
+  width:15rem;
+  padding-top: 15rem;
   }
   
   .textintro{
