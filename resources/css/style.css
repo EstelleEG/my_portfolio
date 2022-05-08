@@ -209,7 +209,6 @@ section{
 }
   
 /****************************************** Cards MES SERVICES ***************************/
-
 .messervices h1{ 
     display:flex;
     justify-content: center;
@@ -569,8 +568,6 @@ footer {
   color: #53a89b;
 }
  
-
-
 /************************************ MEDIA QUERIES *********************************/
 /************************************ MEDIA QUERIES *********************************/
 /************************************ MEDIA QUERIES *********************************/
@@ -772,9 +769,6 @@ footer p{
 /************************************ END MEDIA QUERIES @media (max-width: 575px) { *********************************/
 }
 
-
-
-
 /*for screens of 768 px and less*/
 @media (max-width: 768px) {
   .title-top-md {
@@ -877,14 +871,4 @@ footer p{
   .demo:hover {
     opacity: 1;
   }
-}
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-
 }

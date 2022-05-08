@@ -1,5 +1,3 @@
-
-
 /////////////////////////////////////////////////////////////////////
 //Burger menu
 function burgerMenu() {
@@ -7,12 +5,10 @@ function burgerMenu() {
   if (dropdown.className === "tabs") {
     dropdown.className += " showtabs";
   }
-
   else {
     dropdown.className = "tabs";
   }
 }
-
 
 /////////////////////////////////////////////////////////////////////
 //Scroll up arrow, before footer
@@ -60,7 +56,6 @@ for (let i = 0; i < filterButtons.length; i++) {
 
   })
 }
-
 /////////////////////////////////////////////////////////////////////
 //// END PORTFOLIO PAGE/////////////////////
 
