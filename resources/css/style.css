@@ -60,7 +60,7 @@ nav{
   .iconsSM>a>i{      
     font-size: 1.5rem;
     color:#53b89a;
-    margin-left: 0.6rem;
+    margin-left: 1.5rem;
   }
   
   .iconsSM>a>i:hover{      
@@ -74,13 +74,13 @@ section{
     width:100%;
     background-color:#1e1e1e;
     flex-wrap: wrap;
-    padding-top: 8rem;
+    padding-top: 6rem;
     padding-bottom: 4rem;
   }
 
   
 .idmeimg img{
-  border-radius: 1%;
+  border-radius: 5px;
   width:15rem;
   padding-top: 15rem;
   }
@@ -482,11 +482,13 @@ footer {
   max-width: 100%;
   margin-bottom: 20px;
 }
+
 .portfolio .filter-buttons ul{
   list-style: none;
   text-align: center;
   padding: 3rem;
 }
+
 .filter-buttons ul li{
   color: whitesmoke;
   font-weight: 500;
@@ -497,26 +499,38 @@ footer {
   cursor: pointer;
   padding-bottom: 0.3rem;
 }
+
+.filter-buttons ul li:hover{
+  color:#53b89a;
+}
+
 .portfolio .filter-buttons ul li.active{
   color: whitesmoke;
   border-bottom: 2px solid whitesmoke;
 }
+
+.filter-buttons ul li.active:hover{
+  color:#53b89a;
+}
+
 .portfolio .portfolio-gallery{
   flex: 0 0 100%;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
 .portfolio .portfolio-gallery .item{
   flex: 0 0 33.33%;
   max-width: 33.33%;
   position: relative;
   padding: 8px;
-
 }
+
 .portfolio .portfolio-gallery .item .inner{
   position: relative;
 }
+
 .portfolio .portfolio-gallery .item img{
   width: 100%;
   display: block;
@@ -530,11 +544,13 @@ footer {
       position: relative;
       padding:8px ;
   }
+
   .idmeimg {
     text-align: center;
   }
 
 }
+
 @media(max-width:500px){
   .portfolio .portfolio-gallery .item{
       flex:0 0 100% ;
@@ -553,6 +569,8 @@ footer {
   color: #53a89b;
 }
  
+
+
 /************************************ MEDIA QUERIES *********************************/
 /************************************ MEDIA QUERIES *********************************/
 /************************************ MEDIA QUERIES *********************************/
@@ -569,9 +587,14 @@ footer {
 /************* MAIN SECTION *************/
 section{
   flex-wrap: wrap;
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-left: 2rem;
 }
+
+.container{
+  padding-bottom: 2rem;
+}
+
 
 .idmeimg {
   text-align: center;
@@ -580,6 +603,7 @@ section{
 .idmeimg img{
   border-radius: 1%;
   width:16rem;
+  padding-top: 0.5rem;
 }
 
 
@@ -751,11 +775,6 @@ footer p{
 
 
 
-
-
-
-
-
 /*for screens of 768 px and less*/
 @media (max-width: 768px) {
   .title-top-md {
@@ -860,12 +879,3 @@ footer p{
   }
 }
 
-
-
-
-
-
-
-@media (max-width: 1200px) {
-
-}
