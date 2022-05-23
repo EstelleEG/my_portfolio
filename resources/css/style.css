@@ -579,12 +579,15 @@ footer {
 /************************************ MEDIA QUERIES *********************************/
 /************************************ MEDIA QUERIES *********************************/
 /************************************ MEDIA QUERIES *********************************/
+
+/******MOBILE VERSION **************************************************************/
+
 @media (max-width: 575px) {
 /************* header nav ***************/
 /* logo is child of nav */
 .logonav {        
   width:4rem;
-  margin-left: 5rem;
+  margin-left: 4rem;
   padding-top:2rem;
   padding-bottom:2rem;
 }
@@ -772,14 +775,13 @@ footer p{
   font-size: 1rem;
   margin-right: 1rem;
 }
-
-
-/************************************ END MEDIA QUERIES @media (max-width: 575px) { *********************************/
 }
+/************************************ END MEDIA QUERIES @media (max-width: 575px) { *********************************/
 
 
 
 
+/************************************ MEDIA QUERIES @media (max-width: 768px) { *********************************/
 /*for screens of 768 px and less*/
 @media (max-width: 768px) {
   .title-top-md {
@@ -788,7 +790,6 @@ footer p{
     .iconsSM {
     display:none;
   }
-
 
   section h1{
     font-size: 40px;
@@ -827,6 +828,7 @@ footer p{
 
 /************************ BURGER MENU DROPDOWN *********************************/
   .nav-toggle{
+    margin-top:1rem;
     display:block;
     color: whitesmoke;
     background-color: transparent;
@@ -860,7 +862,7 @@ footer p{
   nav{
     display:flex;
     height:auto;/* covers blanks in between tabs*/
-    padding-top: 25px;
+    padding-top: 40px;
     justify-content: space-between;
   }
     
@@ -868,9 +870,11 @@ footer p{
     display:block;
   }
     
-  .logo {
-    margin-left: 5rem;
-    width:7rem;
+  .logonav {
+    margin-top: 3.5rem;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    width:3rem;
   }
   
   /* Add a transparency effect for thumnbail images */
