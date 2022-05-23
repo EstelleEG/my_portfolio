@@ -68,6 +68,11 @@ nav{
   }
      
 /****************************************** MAIN SECTION ******************************************/
+.animate__animated.animate__rollIn {
+  --animate-duration: 2s;
+}
+
+
 section{
     display:flex;
     align-items: center;
