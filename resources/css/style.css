@@ -35,7 +35,7 @@ nav{
 }
    
   /*a are children of tabs*/
-  .tabs{      /* is child of nav and parent of the a*/
+.tabs {      /* is child of nav and parent of the a*/
     display: flex;
     width:50%;
    justify-content: space-around;
@@ -57,13 +57,17 @@ nav{
   }
 
   /***for iconsSM******/
-  .iconsSM>a>i{      
+  div.iconsSM{      
+    padding-right: 2.5rem;
+  }
+  
+  div.iconsSM>a>i{      
     font-size: 1.5rem;
     color:#53b89a;
     margin-left: 1.5rem;
   }
   
-  .iconsSM>a>i:hover{      
+  div.iconsSM>a>i:hover{      
     color:whitesmoke;
   }
      
@@ -397,23 +401,22 @@ footer {
   }
     
   footer p{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
     
-  .iconsSMfooter{     
+  div.iconsSMfooter{     
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 1rem;
   }
  
-  .iconsSMfooter i{
+  div.iconsSMfooter i{
     color: #53a89b;
-    padding: 8px;
+    padding: 4px;
     font-size: 2rem;
-    margin-right: 2rem;
+    margin-right: 1.2rem;
   }
   
-  .iconsSMfooter i:hover{
+  div.iconsSMfooter i:hover{
     color:#1e1e1e;
   }
 
@@ -587,7 +590,7 @@ footer {
 /* logo is child of nav */
 .logonav {        
   width:4rem;
-  margin-left: 4rem;
+  margin-left: 0rem;
   padding-top:2rem;
   padding-bottom:2rem;
 }
@@ -757,7 +760,7 @@ left:0rem;
   
 /************************* FOOTER ************************************/
 .logofooter {
-  width:5rem;
+  width:2.7rem;
   margin: 2rem 0px 3rem 3rem;
 }
   
@@ -770,9 +773,9 @@ footer p{
   margin-left: 1rem;
 }
 
-.iconsSMfooter i{
+div.iconsSMfooter i{
   padding: 4px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
 }
 }
@@ -875,6 +878,10 @@ footer p{
     margin-left: 7rem;
     margin-bottom: 2rem;
     width:3rem;
+  }
+
+  section{
+    margin-top:0;
   }
   
   /* Add a transparency effect for thumnbail images */
