@@ -14,7 +14,7 @@ body {
 a {
   text-decoration: none;
 }
-  
+
 /************************************ HEADER NAV *******************************************************/
 
 /* logo is child of nav */
@@ -180,6 +180,7 @@ section{
   cursor: pointer;
   display: inline-block;
   position: relative;
+  color:whitesmoke;
 }
 
   .btnportfolio span:after {
