@@ -300,14 +300,14 @@ div.iconsLeisure h2{
   margin-left: 1.5rem;
   text-decoration: none;
   padding-top: 3rem;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+ align-items: center;
 }
 
 div.iconsLeisure h2{      
   color:whitesmoke;
   font-size: 5rem;
-  font-family: 'Tangerine', cursive;
+  font-family: 'Tangerine';
   display: flex;
   justify-content: center;
 }
@@ -599,6 +599,9 @@ footer {
       max-width: 100%; }
 }
 
+/********************************** END OF PORTFOLIO PAGE***********************************/
+
+
 /*********************************** BURGER MENU ICON ***************************/
 .nav-toggle{
     display:none;
@@ -809,14 +812,15 @@ div.iconsSMfooter i{
   margin-right: 1rem;
 }
 }
-/************************************ END MEDIA QUERIES @media (max-width: 575px) { *********************************/
+/************************************ END MEDIA QUERIES MOBILE version (max 575px) *********************************/
 
 
 
 
-/************************************ MEDIA QUERIES @media (max-width: 768px) { *********************************/
-/*for screens of 768 px and less*/
-@media (max-width: 768px) {
+/************************************ MEDIA QUERIES @media (max-width: 1100px) { *********************************/
+
+/*for screens of 1100px and less*/
+@media (max-width: 1100px) {
   .title-top-md {
     order: -1;
   }
@@ -846,6 +850,12 @@ div.iconsSMfooter i{
     margin-left: -0.1rem;
     font-size: 1.2rem;
   }
+
+  .idmeimg img{
+    border-radius: 5px;
+    width:15rem;
+    padding-top: 2rem;
+    }
     
   footer p{
     font-size: 13px;
