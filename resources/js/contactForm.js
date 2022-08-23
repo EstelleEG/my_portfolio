@@ -3,6 +3,17 @@
   emailjs.init("4riFHalEW_nXH8pM7");
 })();
 
+// check and send confirmation 
+function ValidateEmail(mail) 
+{
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr, value))
+  {
+    alert("mail sent !")
+    return (true)
+  }
+     alert("You have entered an invalid email address!")
+    return (false)
+}
 
 //get the inputs
 function sendmail() {
@@ -22,6 +33,8 @@ function sendmail() {
   .then(function (res) {alert("Your mail has been sent successfully ! Thank you")});
   ValidateEmail(userEmail);
 }
+
+
 
 
 
